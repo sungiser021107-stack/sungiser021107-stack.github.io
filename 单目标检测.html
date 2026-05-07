@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pytorch 数据集加载笔记</title>
+</head>
+<body>
+    <h1>Pytorch 数据集加载学习笔记</h1>
+    <p>from torch.utils.data import Dataset</p>
+    <p>__init__ 初始化数据路径和预处理</p>
+    <p>__len__ 返回数据集总样本数</p>
+    <p>__getitem__ 读取图片并转换维度（HWC → CHW）</p>
+    <p>cv2.imread 读取的图片是 HWC 格式，需要用 permute(2,0,1) 转成 PyTorch 用的 CHW 格式</p>
+    <p><a href="./index.html">← 返回主页</a></p>
+</body>
+</html>
